@@ -28,7 +28,7 @@ variable = "test"; // => <<< erreur >>>
 
 ## [Les types de valeur](<https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/typeof>)
 
-| type | example |
+| Type | Example |
 |---|---|
 | number | ```let variable = 5;``` |
 | string | ```let variable = "test";```  |

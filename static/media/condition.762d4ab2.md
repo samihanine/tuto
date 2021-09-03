@@ -40,7 +40,7 @@ let denomination = (age < 18) ? "minor" : "major";
 ```
 
 ## [Les opérateurs conditionnels](https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Expressions_and_Operators)
-| symbole | signification |
+| Symbole | Signification |
 |---|---|
 | ```>``` | strictement plus grand que |
 | ```>=``` | plus grand que  |
