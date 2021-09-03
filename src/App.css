@@ -33,6 +33,10 @@ li {
 }
 /* ----- */
 
+a, a:visited {
+  color:#DF6B74;
+}
+
 h1, h1 a  {
   color: #2586c7 !important;
   margin: 10px 0;
@@ -180,7 +184,7 @@ pre {
 
   background-color: #1c2c49;
   padding: 20px 20px;
-  min-height: 100vh;
+  min-height: calc(100vh - 40px);
   box-sizing: border-box;
 }
 
@@ -213,7 +217,7 @@ pre {
     grid-template-columns: 1fr 1fr;
     width: calc(100vw - 40px);
     margin-bottom: 20px;
-    
+    gap: 5px;
   }
 
   .summary > .btn {
@@ -221,4 +225,14 @@ pre {
     padding: 2px 20px;
     font-size: 14px;
   }
+
+  ul {
+    padding-left: 0px;
+    list-style: inside;
+    
+  }
+  li {
+    margin: 4px 0;
+  }
+
 }

@@ -1,4 +1,12 @@
-npm i react-markdown
-npm i remark-gfm
+# push code
+* git add *
+* git commit -m ""
+* git push origin master
 
-npm i prismjs
+# push on github pages
+* git run deploy
+
+# packages
+* npm i react-markdown
+* npm i remark-gfm
+* npm i prismjs

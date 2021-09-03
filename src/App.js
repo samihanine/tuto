@@ -4,6 +4,9 @@ import { useEffect, useState } from "react";
 import Prism from "prismjs";
 import "prismjs/themes/prism-tomorrow.css";
 import 'prismjs/components/prism-batch';
+import 'prismjs/components/prism-jsx';
+import 'prismjs/components/prism-js-extras';
+import 'prismjs/components/prism-bash';
 
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm';
@@ -20,7 +23,14 @@ import comment_md from './markdown/javascript/comment.md';
 
 import start_md from './markdown/reactjs/start.md';
 import component_md from './markdown/reactjs/component.md';
-
+import import_md from './markdown/reactjs/import.md';
+import jsx_md from './markdown/reactjs/jsx.md';
+import useState_md from './markdown/reactjs/useState.md';
+import useEffect_md from './markdown/reactjs/useEffect.md';
+import useRef_md from './markdown/reactjs/useRef.md';
+import router_md from './markdown/reactjs/router.md';
+import props_md from './markdown/reactjs/props.md';
+import example1_md from './markdown/reactjs/example.md';
 class MarkdownFile {
 
   constructor(settings) {
@@ -44,9 +54,16 @@ let data_js = [
 ];
 
 let data_react = [
-  new MarkdownFile({ name: "Démmarer", module: start_md }),
+  new MarkdownFile({ name: "Démarrer", module: start_md }),
   new MarkdownFile({ name: "Les composants", module: component_md }),
-  new MarkdownFile({ name: "Exemple", module: example_md })
+  new MarkdownFile({ name: "Les imports", module: import_md }),
+  new MarkdownFile({ name: "La syntaxe jsx", module: jsx_md }),
+  new MarkdownFile({ name: "useState", module: useState_md }),
+  new MarkdownFile({ name: "useEffect", module: useEffect_md }),
+  new MarkdownFile({ name: "useRef", module: useRef_md }),
+  new MarkdownFile({ name: "Gérer l'url", module: router_md }),
+  new MarkdownFile({ name: "Les props", module: props_md }),
+  new MarkdownFile({ name: "Exemple", module: example1_md })
 ];
 
 let pages = [
@@ -67,7 +84,7 @@ function App() {
 
     let loading = () => {
       load++;
-      if (load === 11) setMarkdown(true)
+      if (load === data_js.length + data_react.length) setMarkdown(true)
     };
 
     pages.forEach(page => {

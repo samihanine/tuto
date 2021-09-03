@@ -5,21 +5,25 @@
 * Dans la suite de ce tuto, je ne détaillerais uniquement des composants fonctions.
 
 ## Structure d'un composant fonction
-* Les ```import``` se font au sommet du fichier.
+* Les ```import``` des différents assets et modules se font au sommet du fichier.
 * Ensuite on déclare la fonction avec le mot-clé ```function``` suivi du nom du composant.
-* Le corps de la fonction comportera les différentes instructions à effectuer servant à l'affichage du composant.
-* La fonction se termine forcément par un ```return``` qui va renvoyer le code jsx (html et js) à afficher.
+* Le corps de la fonction comportera les différentes instructions à effectuer utiles à l'affichage du composant.
+* La fonction doit se terminer par un ```return``` qui va renvoyer le code jsx (html et js) à afficher.
 * Enfin on exporte la fonction grâce aux mots-clés ```export default``` suivit du nom de notre composant.
 
 ```js
 import './Component.css';
 
 function Component(){
+  
   const text = "hello";
+
+  const Other_function = () => <div>ok</div>;
 
   return (
     <div>
       <p>{ text }</p>
+      <Other_function />
     </div>
   );
 }
