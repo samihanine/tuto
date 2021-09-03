@@ -38,21 +38,8 @@ export default Component;
 
 ## [Balise Link](https://reactrouter.com/web/api/Link)
 
-### utilisation basique
 ```jsx
 import { Link } from "react-router-dom";
 // ...
 <Link to="/contact">Click here</Link>
-```
-
-### utlisation poussée
-```jsx
-import { Link } from "react-router-dom";
-// ...
-<Link to={{ 
-    pathname: "/contact", 
-    search: "?sort=name", 
-    state: { fromDashboard: true } }}>
-    Click here
-</Link>
 ```
