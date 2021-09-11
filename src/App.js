@@ -78,7 +78,6 @@ function App() {
   const [currentFile, setCurrentFile] = useState(0);
   const [currentPage, setCurrentPage] = useState(0);
 
-
   useEffect(() => {
     let load = 0;
 

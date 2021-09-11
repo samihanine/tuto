@@ -22,6 +22,7 @@ th {
 table {
   margin: auto;
 }
+
 td {
   border: solid 1px white;
   text-align: center;
@@ -30,6 +31,10 @@ td {
 
 li {
   text-align: justify;
+}
+
+code {
+  font-size: 15px !important;
 }
 /* ----- */
 
