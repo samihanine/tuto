@@ -55,3 +55,16 @@ let haku_copie = Object.assign({}, haku);
 haku_copie.name = "totoro";
 console.log(haku.name) // => "haku"
 ```
+
+## [Décomposer un objets](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+* Pour affecter des variables à des propriétés d'un objet, on peut utiliser la décomposition.
+* Exemple d'affectation sans décomposition:
+```js
+let name = humain.name;
+let age = humain.age;
+let sexe = humaine.sexe:
+```
+* Exemple d'affectation avec décomposition (même résulat):
+```js
+let { age, name, sexe } = humain;
+```

@@ -3,7 +3,7 @@
 * react monopage / gestion d'url manuel / react router dom
 
 ## [Installation](https://www.npmjs.com/package/react-router-dom)
-```batch
+```bash
 npm install react-router-dom
 ```
 
@@ -15,7 +15,6 @@ npm install react-router-dom
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./Home";
 import Contact from "./Contact";
-import Error404 from "./Error404";
 
 function Component(){
   return (
@@ -25,9 +24,6 @@ function Component(){
         </Route>
         <Route exact path="/contact">
             <Contact />
-        </Route>
-        <Route path="*">
-            <Error404 />
         </Route>
     </>
   );

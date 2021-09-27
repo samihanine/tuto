@@ -11,11 +11,11 @@
 * La fonction doit se terminer par un ```return``` qui va renvoyer le code jsx (html et js) à afficher.
 * Enfin on exporte la fonction grâce aux mots-clés ```export default``` suivit du nom de notre composant.
 
-```js
+```jsx
 import './Component.css';
 
 function Component(){
-  
+
   const text = "hello";
 
   const Other_function = () => <div>ok</div>;
